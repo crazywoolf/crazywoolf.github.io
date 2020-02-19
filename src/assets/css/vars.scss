@@ -1,0 +1,22 @@
+:root {
+    --font-main: 'Hind', system-ui;
+    --font-accent: 'b', system-ui;
+
+    --color-main-bg: #fff;
+    --color-accent-bg: #fafafa;
+
+    --color-title-text: #333;
+    --color-accent-text: #fff;
+    --color-main-text: #a6a7aa;
+
+    --color-theme: #17bed2;
+
+    --max-width: 1200px;
+}
+
+@custom-media --viewport-laptop-l (width <= 1440px);
+@custom-media --viewport-laptop (width <= 1024px);
+@custom-media --viewport-tablet (width <= 768px);
+@custom-media --viewport-mobile-l (width <= 425px);
+@custom-media --viewport-mobile-m (width <= 375px);
+@custom-media --viewport-mobile-s (width <= 320px);

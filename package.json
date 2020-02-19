@@ -1,0 +1,149 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:crazywoolf/crazywoolf.github.io.git"
+  },
+  "keywords": [
+    "base",
+    "spa",
+    "vue"
+  ],
+  "author": "Frolova",
+  "license": "MIT",
+  "description": "Резюме Фроловой Ирины Николавны",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit",
+    "share": "node share.js",
+    "dev": "npm run serve",
+    "prod": "npm run build",
+    "all": "npm run share && npm run build"
+  },
+  "dependencies": {
+    "intersection-observer": "^0.5.1",
+    "poly-fluid-sizing": "^1.1.0",
+    "register-service-worker": "^1.5.2",
+    "swiper": "^4.5.0",
+    "vue": "^2.6.10",
+    "vue-cookie": "^1.1.4",
+    "vue-gtm": "^2.0.0",
+    "vue-i18n": "^8.11.2",
+    "vue-meta": "^1.6.0",
+    "vue-observe-visibility": "^0.4.4",
+    "vue-progressbar": "^0.7.5",
+    "vue-router": "^3.0.6",
+    "vue-router-prefetch": "^1.6.0",
+    "vue-social-sharing": "^2.4.5",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-e2e-cypress": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-plugin-pwa": "^3.9.0",
+    "@vue/cli-plugin-unit-jest": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^23.6.0",
+    "backpack.css": "^2.0.0",
+    "create-html": "^4.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "fibers": "^3.1.1",
+    "postcss-css-variables": "^0.12.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-env-function": "^2.0.2",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-font-variant": "^4.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-initial": "^3.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "sass": "^1.22.2",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-pug": "^1.0.7",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-manifest-plugin": "^2.0.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "warn",
+        {
+          "printWidth": 160,
+          "tabWidth": 4,
+          "singleQuote": true,
+          "trailingComma": "none",
+          "bracketSpacing": false,
+          "jsxBracketSameLine": true
+        }
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-import": {},
+      "postcss-initial": {},
+      "postcss-font-variant": {},
+      "postcss-env-function": {},
+      "postcss-flexbugs-fixes": {},
+      "postcss-css-variables": {
+        "preserve": true
+      },
+      "postcss-custom-media": {},
+      "postcss-preset-env": {},
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 0.25%",
+    "IE 11"
+  ],
+  "directories": {
+    "test": "tests"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.vue$": "vue-jest",
+      ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "testMatch": [
+      "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+    ],
+    "testURL": "http://localhost/"
+  }
+}
